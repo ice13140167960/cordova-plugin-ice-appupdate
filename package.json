@@ -8,6 +8,7 @@
       "android"
     ]
   },
+ "repository": "ice13140167960/cordova-plugin-ice-appupdate",
  "keywords": [
     "cordova",
     "android",
