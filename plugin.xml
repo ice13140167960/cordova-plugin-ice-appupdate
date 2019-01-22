@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="com.ice.plugin.appupdate"
+    version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>IceAppUpdate</name>
+    <js-module name="IceAppUpdate" src="www/IceAppUpdate.js">
+        <clobbers target="cordova.plugins.IceAppUpdate" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="IceAppUpdate">
+                <param name="android-package" value="com.ice.plugin.appupdate.IceAppUpdate" />
+            </feature>
+            <feature name="UpdateAppHttpUtil">
+                <param name="android-package" value="com.ice.plugin.appupdate.UpdateAppHttpUtil" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+            <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+        </config-file>
+        <source-file src="src/android/IceAppUpdate.java"
+            target-dir="src/com/ice/plugin/appupdate/" />
+        <source-file src="src/android/UpdateAppHttpUtil.java"
+            target-dir="src/com/ice/plugin/appupdate/" />
+        <framework src="com.qianwen:update-app:3.5.2" />
+        <framework src="com.qianwen:okhttp-utils:3.8.0" />
+        <framework src="com.squareup.okio:okio:1.13.0" />
+    </platform>
+</plugin>
