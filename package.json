@@ -1,5 +1,5 @@
 {
-  "name": "ice-app-update",
+  "name": "cordova-plugin-ice-appupdate",
   "version": "1.0.0",
   "description": "Cordova Android App版本更新插件",
   "cordova": {
