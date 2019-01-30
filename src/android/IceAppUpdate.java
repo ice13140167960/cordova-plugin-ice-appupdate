@@ -6,7 +6,7 @@ import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import com.vector.update_app.UpdateAppManager;
+import com.ice.appupdate.UpdateAppManager;
 import android.widget.Toast;
 
 /**

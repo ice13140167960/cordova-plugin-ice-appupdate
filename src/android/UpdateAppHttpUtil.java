@@ -2,7 +2,7 @@ package com.ice.plugin.appupdate;
 
 import android.support.annotation.NonNull;
 
-import com.vector.update_app.HttpManager;
+import com.ice.appupdate.HttpManager;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.FileCallBack;
 import com.zhy.http.okhttp.callback.StringCallback;
