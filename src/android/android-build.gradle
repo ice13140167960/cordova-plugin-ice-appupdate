@@ -1,0 +1,3 @@
+dependencies {
+    compile(name:'update-app', ext:'aar')
+}

@@ -26,7 +26,7 @@
             target-dir="src/com/ice/plugin/appupdate/" />
         <source-file src="src/android/UpdateAppHttpUtil.java"
             target-dir="src/com/ice/plugin/appupdate/" />
-        <framework src="com.qianwen:update-app:3.5.2" />
+    	<framework src="src/android/android-build.gradle" custom="true" type="gradleReference"/>
         <framework src="com.qianwen:okhttp-utils:3.8.0" />
         <framework src="com.squareup.okio:okio:1.13.0" />
     </platform>
