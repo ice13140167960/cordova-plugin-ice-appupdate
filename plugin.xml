@@ -27,7 +27,7 @@
         <source-file src="src/android/UpdateAppHttpUtil.java"
             target-dir="src/com/ice/plugin/appupdate/" />
     	<framework src="src/android/android-build.gradle" custom="true" type="gradleReference"/>
-	<resource-file src="src/android/update-app.aar" target="libs/update-app.aar"/>
+	<resource-file src="src/android/update-app.aar" target="app/libs/update-app.aar"/>
         <framework src="com.qianwen:okhttp-utils:3.8.0" />
         <framework src="com.squareup.okio:okio:1.13.0" />
     </platform>
